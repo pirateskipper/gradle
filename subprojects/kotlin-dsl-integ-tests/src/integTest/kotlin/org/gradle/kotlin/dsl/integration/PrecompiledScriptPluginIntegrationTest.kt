@@ -91,7 +91,7 @@ class PrecompiledScriptPluginIntegrationTest : AbstractPluginIntegrationTest() {
             firstLocation,
             """
             plugins { `kotlin-dsl` }
-            ${jcenterRepository(GradleDsl.KOTLIN)}
+            ${RepoScriptBlockUtil.mavenCentralRepository(GradleDsl.KOTLIN)}
             """
         )
 
@@ -143,7 +143,6 @@ class PrecompiledScriptPluginIntegrationTest : AbstractPluginIntegrationTest() {
         withBuildScript(
             """
             plugins { `kotlin-dsl` }
-            ${jcenterRepository(GradleDsl.KOTLIN)}
             """
         )
 
