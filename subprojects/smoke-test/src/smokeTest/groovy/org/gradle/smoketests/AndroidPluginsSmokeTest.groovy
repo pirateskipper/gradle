@@ -221,7 +221,7 @@ class AndroidPluginsSmokeTest extends AbstractSmokeTest {
 
         file('build.gradle') << buildscript(agpVersion) << """
             subprojects {
-                ${jcenterRepository()}
+                ${mavenCentralRepository()}
                 ${googleRepository()}
             }
         """
@@ -265,7 +265,7 @@ class AndroidPluginsSmokeTest extends AbstractSmokeTest {
     private static String buildscript(String pluginVersion) {
         """
             buildscript {
-                ${jcenterRepository()}
+                ${mavenCentralRepository()}
                 ${googleRepository()}
 
                 dependencies {
