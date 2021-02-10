@@ -93,16 +93,8 @@ class RepoScriptBlockUtil {
     private RepoScriptBlockUtil() {
     }
 
-    static String jcenterRepository(GradleDsl dsl = GROOVY) {
-        """
-            repositories {
-                ${jcenterRepositoryDefinition(dsl)}
-            }
-        """
-    }
-
-    static void configureMavenCentral(RepositoryHandler repositories) {
-        MirroredRepository.MAVEN_CENTRAL.configure(repositories)
+    static void configureJcenter(RepositoryHandler repositories) {
+        MirroredRepository.JCENTER.configure(repositories)
     }
 
     static String mavenCentralRepository(GradleDsl dsl = GROOVY) {
