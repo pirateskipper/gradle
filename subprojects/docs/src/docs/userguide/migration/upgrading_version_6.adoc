@@ -36,6 +36,7 @@ Some plugins will break with this new version of Gradle, for example because the
 [[changes_6.9]]
 == Upgrading from 6.8
 
+[[jcenter_deprecation]]
 === `jcenter()` convenience method is now deprecated
 
 JFrog recently link:https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter[announced] the decommission of JCenter.
