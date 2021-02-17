@@ -106,7 +106,7 @@ public interface RepositoryHandler extends ArtifactRepositoryContainer {
      * The behavior of this repository is otherwise the same as those added by {@link #maven(org.gradle.api.Action)}.
      * <p>
      * Examples:
-     * <pre class='autoTested'>
+     * <pre class='autoTestedWithDeprecations'>
      * repositories {
      *   jcenter {
      *     artifactUrls = ["http://www.mycompany.com/artifacts1", "http://www.mycompany.com/artifacts2"]
@@ -132,7 +132,7 @@ public interface RepositoryHandler extends ArtifactRepositoryContainer {
      * The behavior of this repository is otherwise the same as those added by {@link #maven(org.gradle.api.Action)}.
      * <p>
      * Examples:
-     * <pre class='autoTested'>
+     * <pre class='autoTestedWithDeprecations'>
      * repositories {
      *     jcenter()
      * }
