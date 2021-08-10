@@ -33,6 +33,14 @@ Some plugins will break with this new version of Gradle, for example because the
 . Run `gradle wrapper --gradle-version {gradleVersion}` to update the project to {gradleVersion}.
 . Try to run the project and debug any errors using the <<troubleshooting.adoc#troubleshooting, Troubleshooting Guide>>.
 
+[[changes_6.9]]
+== Upgrading from 6.8
+
+=== `jcenter()` convenience method is now deprecated
+
+JFrog recently link:https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter[announced] the decommission of JCenter.
+Gradle emits a warning message when `jcenter()` is used in the repository configuration.
+
 [[changes_6.8]]
 == Upgrading from 6.7
 
@@ -42,7 +50,7 @@ Some plugins will break with this new version of Gradle, for example because the
 
 The API supporting the Java Toolchain feature in `org.gradle.jvm.toolchain` is now marked as `@NonNull`.
 
-This may impact Kotlin consumers where the return types of APIs are no longer nullable. 
+This may impact Kotlin consumers where the return types of APIs are no longer nullable.
 
 ==== Updates to default tool integration versions
 
