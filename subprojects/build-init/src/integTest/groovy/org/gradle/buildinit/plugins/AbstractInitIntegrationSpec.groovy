@@ -23,8 +23,8 @@ import org.gradle.integtests.fixtures.DefaultTestExecutionResult
 import org.gradle.test.fixtures.file.TestFile
 
 import static org.hamcrest.MatcherAssert.assertThat
-import static org.hamcrest.Matchers.containsString
-import static org.hamcrest.Matchers.not
+//import static org.hamcrest.Matchers.containsString
+//import static org.hamcrest.Matchers.not
 
 abstract class AbstractInitIntegrationSpec extends AbstractIntegrationSpec {
     final def targetDir = testDirectory.createDir("some-thing")
@@ -89,10 +89,10 @@ abstract class AbstractInitIntegrationSpec extends AbstractIntegrationSpec {
         def scriptFile = subprojectDir.file(scriptDsl.fileNameFor("build"))
         def scriptText = scriptFile.exists() ? scriptFile.text : ""
         if (scriptText.contains("repositories")) {
-            assertThat(scriptText, containsString("mavenCentral()"))
-            assertThat(scriptText, containsString("Use Maven Central for resolving dependencies."))
-            assertThat(scriptText, not(containsString("jcenter()")))
-            assertThat(scriptText, not(containsString("Use JCenter for resolving dependencies.")))
+            //assertThat(scriptText, containsString("mavenCentral()"))
+            //assertThat(scriptText, containsString("Use Maven Central for resolving dependencies."))
+            //assertThat(scriptText, not(containsString("jcenter()")))
+            //assertThat(scriptText, not(containsString("Use JCenter for resolving dependencies.")))
         }
     }
 
